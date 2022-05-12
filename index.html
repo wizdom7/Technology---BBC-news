@@ -1,0 +1,389 @@
+<html >
+    <head>
+        <title>Technology - BBC News</title>
+        <style type="text/css">
+            #topbar {
+                width: 1200px;
+                margin: 0 auto;
+                height: 40px;
+            }
+            body{
+                margin: 0;
+                padding: 0;
+                font-family: ReithSans, Arial, Helvetica, freesans, sans-serif;
+            }
+            #logo{
+                margin-top: 4px;
+                float: left;
+                margin-right: 6px;
+            }
+            .topbar-section{
+                float: left;
+                border-left: 1px #cccccc solid;
+                height: 100%;
+            }
+            #signup-img{
+                margin: 8px 15px;
+                float: left;
+            }
+            #signin-text{
+                font-weight: bold;
+                font-size: 80%;
+                float: left;
+                position: relative;
+                top: 15px;
+                right: 25px;
+                left: 0px;
+                padding-right: 45px;
+            }
+            .topbar-menu{
+                font-weight: bold;
+                font-size: 90%;
+                padding: 13px 15px 0 15;
+                height: 27px;
+                float: left;
+            }
+            #more-dropdown{
+                width: 15px;
+                margin-left: 20px;
+            }
+            #search-logo{
+                position: relative;
+                bottom: 7px;
+            }
+            #search-text{
+                position: relative;
+                bottom: 17px;
+                font-size: 17px;
+            }
+            .clear{
+                clear: both;
+            }
+            #menu-bar-container{
+                background-color: #B80000;
+                width: 100%;
+                height: 70px;
+            }
+            #menu-bar{
+                width: 1200px;
+                margin: 0 auto;
+            }
+            
+            h1{
+                padding: 0px;
+                margin: 0px;
+                color: white;
+                font-size: 40px;
+                font-weight: bold;
+                padding-top: 10px;
+            }
+            #menu-bar-2-container{
+                background-color: #B80000;
+                width: 100%;
+
+            }
+            #menu-bar-2{
+                width: 1215px;
+                margin: 0 auto;
+                height: 40px;
+            }
+            #menu-bar-2 a{
+                color: white;
+                text-decoration: none;
+                padding: 0 10px;
+                border-right: 1px #b6aeae solid;
+                font-size: 14px;
+                position: relative;
+                top: 10px;
+            }
+            #menu-bar-2 a:hover{
+                text-decoration: underline;
+            }
+            .no-border{
+                border: none !important;
+            }
+            #arrow{
+                position: relative;
+                top: 12px;
+                right: 10px;
+            }
+            #page-container{
+                width: 1200px;
+                margin: 0 auto;
+                
+            }
+            h2{
+                font-weight: normal;
+                margin-top: 40px;
+                font-size: 25px;
+                border-bottom: 2px #B80000 solid;
+                width: 128px;
+            }
+            h3{
+                width: 230px;
+            }
+            h3 a{
+                text-decoration: none;
+                color: #5a5a5a;
+                font-size: 30px;
+                flex-wrap: wrap;
+                
+            }
+            h3 a:hover{
+                text-decoration: underline;
+                color: #B80000;
+            }
+            #article-summary{
+                float: left;
+                color:#5a5a5a ;
+                width: 250px;
+            }
+            .summary{
+                 font-size: 90%;
+             }
+            #article-summary p {
+                width: 200px;
+            }
+            #article-container{
+                float: left;
+                width: 1100px;
+                height: 43%;
+            }
+            #main-article-image{
+                position: relative;
+                bottom: 150px;
+                float: left;
+            }
+            #mini-article-image{
+                float: left;
+                position: relative;
+                bottom: 147px;
+                left: 10px;
+            }
+            .mini-article-link{
+                color: black;
+                font-weight: bold;
+                text-decoration: none;
+                flex-wrap: wrap;
+                position: relative;
+                right: 200px;
+                bottom: 20px;
+            }
+            #article-container a:hover{
+                text-decoration: underline;
+                color: #B80000;
+            }
+            
+            .mini-article-text{
+                color: #5a5a5a;
+                font-size: 90%;
+                position: relative;
+                right: 200px;
+                bottom: 20px;
+            }
+            .time-zone-link{
+                color: black;
+                text-decoration: none;
+                font-size: 90%;
+            }
+            .time-zone{
+                font-size: 90%;
+                position: relative;
+                right: 205px;
+                bottom: 10px;
+            }
+            .clock{
+                position: relative;
+                top: 2px;
+                font-size: 90%;
+            }
+            .headline-list{
+                background-color: aqua;
+                width: 800px;
+            }
+            .headlines img{
+                height: px;
+                padding-right: 5px;
+                position: relative;
+                bottom: 11px;
+            }
+            .headlines a{
+                color: black;
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 90%;
+                display: inline-block;
+                width: 230px !important;
+            }
+            .headlines a:hover{
+                text-decoration: underline;
+                color: #B80000;
+            }
+            #list-container{
+                display: flex;
+                list-style-type: none;
+                position: relative;
+                right: 50px;
+            }
+            #bottom-article{
+                padding-top: 15px;
+                display: flex;
+            }
+            #mini-container-1{
+                width: 220px;
+            }
+            .ghost{
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+            }
+            #bottom-article a:hover{
+                text-decoration: underline;
+                color: #B80000;
+            }
+            .ghost-summary{
+                color: #5a5a5a;
+                font-size: 90%;
+            }
+            .bottom-time{
+                font-size: 90%;
+            }
+            #mini-container-2{
+                width: 220px;
+                padding-left: 10px;
+            }
+            #mini-container-3{
+                width: 220px;
+                padding-left: 10px;
+            }#mini-container-4{
+                width: 220px;
+                padding-left: 10px;
+            }
+            #ojdkld{
+                padding-top: 20px;
+            }
+            
+        </style>
+        
+    </head>
+    <body>
+        <div id="topbar">
+            <img id="logo" src="img/bbc.png">
+            <div id="signin-div" class="topbar-section">
+                <img id="signup-img" src="img/signup-logo.png">
+                <span id="signin-text">Sign in</span>
+            </div>
+            <div class="topbar-section topbar-menu">
+                    Home
+            </div>
+            <div class="topbar-section topbar-menu">
+                    News
+            </div>
+            <div class="topbar-section topbar-menu">
+                    Sport
+            </div>
+            <div class="topbar-section topbar-menu">
+                    Reel
+            </div>
+            <div class="topbar-section topbar-menu">
+                    Worklife
+            </div>
+            <div class="topbar-section topbar-menu">
+                    Travel
+            </div>
+            <div class="topbar-section topbar-menu">
+                    Future
+            </div>
+            <div class="topbar-section topbar-menu">
+                    Culture
+            </div>
+            <div class="topbar-section topbar-menu">
+                    More
+                    <img id="more-dropdown" src="img/more.png" alt="">
+            </div>
+            <div class="topbar-section topbar-menu">
+                <span id="search-text">search BBC</span>
+                <img id="search-logo" src="img/search.png" alt="">
+            </div>
+        </div>
+
+        <div class="clear"></div>
+
+        <div id="menu-bar-container">
+            <div id="menu-bar">
+                <h1>NEWS</h1>
+            </div>
+            <div class="clear"></div>
+            <div id="menu-bar-2-container">
+                <div id="menu-bar-2">
+                    <a href="">Home</a>
+                    <a href="">War in Ukraine</a>
+                    <a href="">Coronavirus</a>
+                    <a href="">Climate</a>
+                    <a href="">Video</a>
+                    <a href="">World</a>
+                    <a href="">UK</a>
+                    <a href="">business</a>
+                    <a href="">Tech</a>
+                    <a href="">Science</a>
+                    <a href="">Stories</a>
+                    <a href="">Entertainment & Arts</a>
+                    <a href="">Health</a>
+                    <a href="">World News TV</a>
+                    <a href="" class="no-border">More</a>
+                    <img id="arrow" src="img/arrow.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div id="page-container">
+            <div id="main-article">
+                <h2>Top Stories</h2>
+                <div id="article-container">                   
+                    <h3><a href="">Safe passage for civilians leave Mariupol under way - UN</a></h3>                   
+                    <div id="article-summary">
+                        <p class="summary"> The Ukrainian president says a group of about 100 people have left the besieged steel plant in the city.</p>
+                        <p class="summary">Europe</p>
+                    </div>
+                    <img id="main-article-image" src="img/immigrants.png" alt="">
+                    <img id="mini-article-image" src="img/buspeople.png" alt="">
+                    <a class="mini-article-link" href="">Mariupol civilian taken to both sides' territory</a><p class="mini-article-text">Evacuation operations begins at the last hold-out of Ukrainian fighters in southern Mariupol.</p><p class="time-zone"><img class="clock" src="img/time.png" alt="">1m | <a class="time-zone-link" href="">Europe</a></p>
+                </div>
+                <div class="clear"></div>
+                <div id="headline-list">
+                    <ul id="list-container">
+                        <li class="headlines"><img src="img/play-icon.png" alt=""><a href="">Peloci plege US support until 'fight is done'</a></li>
+                        <li class="headlines"><a href="">US accuses Russia of depravity and brutality</a></li>
+                        <li class="headlines"><a href="">Ukraine hunts for soldiers accused of Bucha crimes</a></li>
+                    </ul>
+                    <div id="bottom-article">
+                        <div id="mini-container-1">
+                            <img src="img/ukraine-ghost.png" alt="">
+                            <p><a class="ghost" href="">How Ukraine's 'Ghost of Kyiv' legend was born</a></p>
+                            <p class="ghost-summary">The "Ghost of Kyiv" story about a heroic pilot downing maany Russain planes turns out to be a legend.</p>
+                            <p class="bottom-time"><img class="clock" src="img/time.png" alt="">6h | <a class="time-zone-link" href="">Europe</a></p>
+                        </div>
+                        <div id="mini-container-2">
+                            <img src="img/joebiden.png" alt="">
+                            <p><a class="ghost" href="">Biden mocks Trump at White House press dinner.</a></p>
+                            <p class="ghost-summary">Joe biden jokes about former president Donald Trump at the prestigious event hosted by Trevor Noah.</p>
+                            <p class="bottom-time"><img class="clock" src="img/time.png" alt="">3h | <a class="time-zone-link" href="">US & Canada</a></p>
+                        </div>
+                        <div id="mini-container-3">
+                            <img src="img/discotheque-inventor.png" alt="">
+                            <p><a class="ghost" href="">'Discotheque inventor' Regine dies aged 91</a></p>
+                            <p class="ghost-summary">Regime known as the "the queen of the night", owned nightclubs across the world.</p>
+                            <p id="ojdkld" class="bottom-time"><img class="clock" src="img/time.png" alt="">3h | <a class="time-zone-link" href="">World</a></p>
+                        </div>
+                        <div id="mini-container-4">
+                            <img src="img/kylie-and-jason.png" alt="">
+                            <p><a class="ghost" href="">kylie and Jason to reunite for Neighbors finale</a></p>
+                            <p class="ghost-summary">The pair will resume their roles as Scott Robinson and Charlene Mitchell for the soap's final episode.</p>
+                            <p class="bottom-time"><img class="clock" src="img/time.png" alt="">3h | <a class="time-zone-link" href="">Entertainment & Arts</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
